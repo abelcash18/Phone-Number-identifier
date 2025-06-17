@@ -6,13 +6,14 @@ function identifyNetworkProvider(phoneNumber) {
         "9mobile": ["0809", "0817", "0818", "0909"],
     };
 
-        phoneNumber = phoneNumber.trim();
+    phoneNumber = phoneNumber.trim();
     if (phoneNumber.startsWith("+234")) {
         phoneNumber = "0" + phoneNumber.slice(4);
+    } else if (phoneNumber.startsWith("234")) {
+        phoneNumber = "0" + phoneNumber.slice(3);
     }
-        phoneNumber = phoneNumber.replace(/[\s-]/g, "");
+    phoneNumber = phoneNumber.replace(/[\s-]/g, "");
 
-    
     const prefix = phoneNumber.slice(0, 4);
 
     for (const network in networkPrefixes) {
@@ -21,7 +22,7 @@ function identifyNetworkProvider(phoneNumber) {
             return network;
         }
     }
-     alert("Unknown network provider")
+    alert("Unknown network provider")
     return "Unknown network provider";
 }
 
