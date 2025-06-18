@@ -5,6 +5,7 @@ body {
             background-image: url(network\ provider\ .jpg);
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             background-repeat: no-repeat;
             padding: 5vw;
 
@@ -28,8 +29,9 @@ body {
         }
 
         #identify-button {
-            width: 100%;
+            width: 50%;
             height: 30px;
+            margin-left: 25%;
             background-color: #4CAF50;
             color: #fff;
             border: none;
@@ -48,13 +50,12 @@ body {
             font-size: 1rem;
         }
 
-
         footer {
             background: transparent;
             color: #141414;
             text-align: center;
             padding: 1.5em;
-            margin-top: 4em;
+            margin-top: 2em;
             font-size: 1em;
         }
 
@@ -65,9 +66,16 @@ body {
     background-color: antiquewhite;
   }
   #container {
-        width: 90vw;
+        width: 80vw;
         padding: 6vw 4vw;
     }
+    footer {
+            background: transparent;
+            color: #141414;
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 15em;
+   }
 }
 
    
@@ -90,5 +98,15 @@ body {
     #result {
         font-size: 0.95rem;
     }
+    
+
+footer {
+            background: transparent;
+            color: #141414;
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 34em;
    }
+   }
+
 
